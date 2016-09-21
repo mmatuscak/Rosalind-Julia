@@ -25,7 +25,8 @@ function print_dna(count)
     println()
 end
 
-dna_file = open("data/rosalind_dna.txt", "r")
-str = readline(dna_file)
-count = CntNucleotide(str)
-print_dna(count)
+open("data/rosalind_dna.txt", "r") do file
+    str = readline(file)
+    count = CntNucleotide(str)
+    print_dna(count)
+end
