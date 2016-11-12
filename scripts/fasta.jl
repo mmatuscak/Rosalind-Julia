@@ -4,8 +4,8 @@
 module fasta
 export parse_fasta
 function parse_fasta(file)
-    seq_num = ASCIIString[]
-    dna_seq = ASCIIString[]
+    seq_num = String[]
+    dna_seq = String[]
     sequence = ""
     i = 1
 
